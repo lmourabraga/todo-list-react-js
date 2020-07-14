@@ -59,10 +59,10 @@ class TodoList extends Component {
                 <h1>
                     <i class="fa fa-tasks" /> Todo List <span>A Simple React Todo List App.</span>
                 </h1>
+                <NewTodoForm createTodo={this.create} />
                 <ul>
                     {todos}
                 </ul>
-                <NewTodoForm createTodo={this.create} />
             </div>
         )
     }
